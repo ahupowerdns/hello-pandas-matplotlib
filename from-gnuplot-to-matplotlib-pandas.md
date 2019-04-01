@@ -1,7 +1,7 @@
 ---
 title: "From gnuplot to Matplotlib & Pandas"
-date: 2019-03-30T15:35:00+01:00
-draft: true
+date: 2019-04-01T09:59:00+01:00
+draft: false
 ---
 
 I've been using gnuplot since.. like forever. It is one of my best friends
@@ -23,8 +23,12 @@ Matplotlib and Pandas which, together, blow gnuplot right out of the water.
 > Note: I am by no means an expert or seasoned user of Matplotlib and Pandas. 
 > In fact, I started this trek only a few weeks ago.  If you spot any mistakes
 > or "worst practices" in here, please let me know (bert.hubert@powerdns.com)
-> and I'll fix it. A few actual experts have looked at this page and not
-> found big problems.
+> and I'll fix it. A few actual experts have looked at this page and did not
+> immediately report big problems.
+
+This article, sample datasets and a notebook to explore Matplotlib & Pandas
+are available [on
+GitHub](https://github.com/ahupowerdns/hello-pandas-matplotlib/)
 
 Key differences
 ---------------
@@ -398,9 +402,20 @@ import pandas
 This sets up sensible defaults. Then press the little 'Run' button and it
 will execute the first cell.
 
-![Stacked graph](https://ds9a.nl/images/graph11.png)
+![Jupyter](https://ds9a.nl/images/graph11.png)
 
-You are now ready to go, and I suggest trying out the `vmstat` commandline
-from the beginning of this post to start exploring Pandas and Matplotlib.
+You are now ready to go! I have published the source of this article, the
+Jupyter notebook, the `diskstat` tool and a `diskstat.csv` and `vmstat.csv`
+dataset on
+[GitHub](https://github.com/ahupowerdns/hello-pandas-matplotlib/) for you to
+explore.
+
+For further reading, the [Matplotlib](https://matplotlib.org/contents.html) and
+[Pandas](https://pandas.pydata.org/pandas-docs/stable/) documentation are 
+good reads.
+
+In addition, Matplotlib and Pandas are incredibly well served by searching
+the web. Almost any question you have will have a pretty decent solution on
+the first page.
 
 Good luck!
