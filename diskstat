@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# 1554047031    7       0 loop0 49965 0 102014 359580 0 0 0 0 0 13756 343156
+
+echo tstamp maj min dev reads rdmerges rdsectors rdtime writes wrmerges wrsectors wrtime ioprogess iotime wiotime discards discardmerges discardsectors discardtime
+while true
+do
+	tstamp=$(date +%s)
+	IFS=$'\n'
+	for line in $(cat /proc/diskstats) 
+	do 
+		echo $tstamp $line
+	done
+	sleep 1
+done
